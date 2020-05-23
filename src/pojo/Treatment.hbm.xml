@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 1, 2019 8:33:17 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Treatment" table="TREATMENT">
+        <id name="treatmentId" type="int">
+            <column name="TREATMENTID" />
+            <generator class="increment" />
+        </id>
+        <property name="patientId" type="java.lang.String">
+            <column name="PATIENTID" />
+        </property>
+        <property name="blockChainId" type="int">
+            <column name="BLOCKCHAINID" />
+        </property>
+    </class>
+</hibernate-mapping>

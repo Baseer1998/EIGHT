@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 1, 2019 2:40:30 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Transaction" table="TRANSACTION">
+        <id name="transactionId" type="int">
+            <column name="TRANSACTIONID" />
+            <generator class="increment" />
+        </id>
+        <property name="patientId" type="java.lang.String">
+            <column name="PATIENTID" />
+        </property>
+        <property name="requestedHospital" type="java.lang.String">
+            <column name="REQUESTEDHOSPITAL" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
